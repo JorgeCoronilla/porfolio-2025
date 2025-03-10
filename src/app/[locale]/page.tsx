@@ -1,19 +1,15 @@
-'use client';
 
-import { useTranslation } from 'react-i18next';
+import HeroHeader from '@/features/ui/HeroHeader';
 import styles from './page.module.css';
-import LanguageSwitcher from '@/features/i18n/LanguageSwitcher';
+import Header from '@/features/ui/Header';
 
 export default function Home() {
-  const { t } = useTranslation();
 
   return (
     <div className={styles.page}>
+    
       <main className={styles.main}>
-        <LanguageSwitcher />
-
-        <h1>{t('Hero.title')}</h1>
-        <p>{t('Hero.description')}</p>
+      <HeroHeader />
       </main>
     </div>
   );

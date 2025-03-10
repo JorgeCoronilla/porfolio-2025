@@ -1,0 +1,22 @@
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border: 1px solid red;
+    margin: 0;
+
+    & nav {
+        background-color: white;
+        color: #333;
+        padding: 20px 40px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between
+    }
+
+}
+
+
