@@ -2,7 +2,7 @@
 
 import useLanguageSwitcher from '@/features/i18n/useLanguageSwitcher';
 import styles from './LanguageSwitcher.module.css';
-import ChevronDownIcon from '@/features/ui/icons/ChevronDownIcon';
+// import ChevronDownIcon from '@/features/ui/icons/ChevronDownIcon';
 
 export default function LanguageSwitcher() {
   const { languages, currentLanguage, handleSwitch, isDropdownVisible, toggleDropdown } =
@@ -18,7 +18,7 @@ export default function LanguageSwitcher() {
       >
         <div className={styles.button}>
           <span>{currentLanguage?.label}</span>
-          <ChevronDownIcon />
+          {/* <ChevronDownIcon /> */}
         </div>
       </div>
       {isDropdownVisible && (

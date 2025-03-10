@@ -4,8 +4,8 @@ import { useRouter } from 'next/navigation';
 import { useTranslation } from 'react-i18next';
 import i18nConfig from '@i18nConfig';
 
-import { setLocaleCookie } from '@/lib/setLocalCookie';
-import { getNewPathname } from '@/lib/getNewPathName';
+import { setLocaleCookie } from '@/lib/i18n/setLocalCookie';
+import { getNewPathname } from '@/lib/i18n/getNewPathName';
 
 
 export default function useLanguageSwitcher() {

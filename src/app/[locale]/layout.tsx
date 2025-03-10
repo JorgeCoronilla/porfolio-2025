@@ -1,6 +1,7 @@
 import i18nConfig from '@i18nConfig';
-import initTranslations from '@/lib/i18n';
+import initTranslations from '@/lib/i18n/i18n';
 import TranslationsProvider from '@/features/i18n/TranslationsProvider';
+import LanguageSwitcher from '@/features/i18n/LanguageSwitcher';
 
 export function generateStaticParams() {
   return i18nConfig.locales.map((locale) => ({ locale }));
@@ -23,6 +24,8 @@ export default async function RootLayout({ children, params }: RootLayoutProps) 
     <html lang={locale}>
       <body>
         <TranslationsProvider namespaces={i18nConfig.spaces} locale={locale} resources={resources}>
+        <LanguageSwitcher />
+
           {children}
         </TranslationsProvider>
       </body>
