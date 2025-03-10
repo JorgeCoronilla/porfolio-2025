@@ -1,0 +1,61 @@
+/* Dropdown container */
+.dropdown {
+  position: relative;
+}
+
+/* Dropdown trigger button */
+.dropdownTrigger {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Button inside the dropdown trigger */
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6.5em;
+  background-color: var(--Background-light-grey);
+  border: var(--Border-width) solid var(--Border-grey);
+  border-radius: var(--Border-radius-box);
+  cursor: pointer;
+  & span {
+    margin: 0 8px 0;
+  }
+  & svg {
+    width: 16px;
+  }
+}
+
+/* Dropdown menu */
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  padding: 0 var(--8px) var(--8px);
+  max-height: 95px;
+  background: var(--Background-light-grey);
+  border: 1px solid var(--Background-grey);
+  border-radius: var(--Border-radius-box);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  padding-left: 1em;
+  padding-top: 0.3em;
+  & div {
+    max-height: 12.5em;
+    overflow-y: auto;
+    cursor: pointer;
+  }
+  & div + p {
+    border-bottom: var(--Border-width) solid var(--Background-light-grey);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    & :hover {
+      background-color: var(--Background-light-grey);
+    }
+  }
+}
+
