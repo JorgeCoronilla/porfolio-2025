@@ -29,13 +29,13 @@ export default function HeroHeader() {
     };
   }, []);
   const { t } = useTranslation();
-  const topMargin = '48%';
+  
 
   return (
     <>
       {showHeader && <Header />}
-      
-        <div style={{ marginTop: topMargin }} className={styles.hero}>
+      <Header />
+        <div  className={styles.hero}>
           <div className={styles.heroContent}>
             <h1 className={styles.heroTitle}>{!showHeader ? t('Hero.title'):" "}</h1>
             <p className={styles.heroSubtitle}>{!showHeader ? t('Hero.description'): ' '}</p>

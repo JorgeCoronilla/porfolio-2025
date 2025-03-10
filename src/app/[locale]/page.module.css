@@ -1,12 +1,20 @@
 .page {
   /* align-items: center;
   justify-items: center; */
-  min-height: 200svh;
   padding: 10px;
   /* gap: 64px; */
   font-family: var(--font-geist-sans);
 }
+.section1{
+  min-height: 100svh;
+  
 
+}
+.section2{
+  min-height: 100svh;
+  background-color: black;
+
+}
 @media (prefers-color-scheme: dark) {
   .page {
   

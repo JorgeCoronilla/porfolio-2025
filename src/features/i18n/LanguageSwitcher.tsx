@@ -2,6 +2,8 @@
 
 import useLanguageSwitcher from '@/features/i18n/useLanguageSwitcher';
 import styles from './LanguageSwitcher.module.css';
+import SpanishFlagIcon from '../ui/icons/SpanishFlagIcon';
+import BrittishFlagIcon from '../ui/icons/BrittishFlagIcon';
 // import ChevronDownIcon from '@/features/ui/icons/ChevronDownIcon';
 
 export default function LanguageSwitcher() {
@@ -18,7 +20,12 @@ export default function LanguageSwitcher() {
       >
         <div className={styles.button}>
           <span>{currentLanguage?.label}</span>
-          {/* <ChevronDownIcon /> */}
+        {currentLanguage?.label === 'English' ? (
+         <BrittishFlagIcon className={styles.flag} />
+        ) : (
+          <SpanishFlagIcon className={styles.flag} />
+        ) }
+        
         </div>
       </div>
       {isDropdownVisible && (
