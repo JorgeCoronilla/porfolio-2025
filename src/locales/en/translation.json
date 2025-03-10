@@ -2,5 +2,9 @@
     "title": "Jorge Coronilla Naranjo",
     "description": "Welcome to my portfolio"
   
-  }
+  },
+  "NotFound": {
+    "title": "Page not found",
+    "message": "Sorry, we couldn't find the page you're looking for."
+    }
   }

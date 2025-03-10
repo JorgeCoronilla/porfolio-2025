@@ -31,27 +31,8 @@
 //   );
 // }
 
-import i18nConfig from '@i18nConfig';
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: 'Stamp',
-  description: 'Tax free app',
-};
-
-export function generateStaticParams() {
-  return i18nConfig.locales.map((locale) => ({ locale }));
-}
-
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-   <>
-    {children}
-   </>
-    
-  );
+}: Readonly<{ children: React.ReactNode }>) {
+  return children; // Just pass through to let [locale]/layout handle everything
 }

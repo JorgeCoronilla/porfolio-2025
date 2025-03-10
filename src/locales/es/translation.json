@@ -2,5 +2,9 @@
   "Hero": {
    "title": "Jorge Coronilla Naranjo",
     "description": "Bienvenido a mi portfolio"
+  },
+  "NotFound": {
+    "title": "Página no encontrada",
+    "message": "Lo sentimos, no pudimos encontrar la página que estás buscando."
   }
 }

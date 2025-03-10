@@ -34,3 +34,54 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+│
+├── .next/
+├── node_modules/
+├── public/
+│  ├─── icons/
+│  └─── images/
+│
+├── src/
+│   ├───app/
+│   │   ├─── [locale]/
+│   │   │   ├─── layout.tsx
+│   │   │   └─── page.tsx
+│   │   ├─── robots.txt/
+│   │   ├─── layout.tsx
+│   │   ├─── manifest.ts
+│   │   └─── not-found.tsx
+│   ├─── features/
+│   │   ├─── i18n/
+│   │   └─── ui/
+│   │   │   ├─── header/
+│   │   │   ├─── hero/
+│   │   │   ├─── icons/
+│   │   │   ├─── loading/
+│   │   │   ├─── logo/
+│   │   │   └─── logo/
+│   ├─── lib/
+│   │   ├─── forms/
+│   │   ├─── i18n/
+│   │   └─── validations/
+│   ├─── locales/
+│   │   ├─── en/
+│   │   └─── es/
+│   ├─── styles/
+│   ├─── types/
+│   │
+│   └─── middleware.ts
+├─── .env.example
+├─── .gitignore
+├─── .nvmrc
+├─── .prettierignore
+├─── .prettierrc
+├─── eslint.config.mjs
+├─── i18cnConfig.ts
+├─── next-env.d.ts
+├─── next.config.js
+├─── package-lock.json
+├─── package.json
+├─── README.md
+└─── tsconfig.json
