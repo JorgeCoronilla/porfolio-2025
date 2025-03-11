@@ -1,4 +1,4 @@
-export default function SpanishFlagIcon(props: React.SVGProps<SVGSVGElement>) {
+export default function BritishFlagIcon(props: React.SVGProps<SVGSVGElement>) {
     return (
       <svg
         {...props}

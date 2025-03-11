@@ -3,7 +3,7 @@
 import useLanguageSwitcher from '@/features/i18n/useLanguageSwitcher';
 import styles from './LanguageSwitcher.module.css';
 import SpanishFlagIcon from '../ui/icons/SpanishFlagIcon';
-import BrittishFlagIcon from '../ui/icons/BrittishFlagIcon';
+import BrittishFlagIcon from '../ui/icons/BritishFlagIcon';
 // import ChevronDownIcon from '@/features/ui/icons/ChevronDownIcon';
 
 export default function LanguageSwitcher() {
