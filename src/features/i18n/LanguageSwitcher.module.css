@@ -7,7 +7,7 @@
 .dropdownTrigger {
   display: flex;
   align-items: center;
-  cursor: pointer;
+  cursor: none;
   padding: 0;
 }
 
@@ -20,7 +20,7 @@
   background-color: var(--Background-light-grey);
   border: var(--Border-width) solid var(--Border-grey);
   border-radius: var(--Border-radius-box);
-  cursor: pointer;
+  cursor: none;
   & span {
     margin: 0 8px 0;
   }
@@ -47,11 +47,11 @@
   & div {
     max-height: 12.5em;
     overflow-y: auto;
-    cursor: pointer;
+    cursor: none;
   }
   & div + p {
     border-bottom: var(--Border-width) solid var(--Background-light-grey);
-    cursor: pointer;
+    cursor: none;
     transition: background-color 0.2s ease;
     & :hover {
       background-color: var(--Background-light-grey);
